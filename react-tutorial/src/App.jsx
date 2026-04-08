@@ -1,10 +1,13 @@
-import './App.css'
+import { useState } from "react";
+
 
 function App(){
-  let name = "Forhad Hossain"
+  const [count, setCount] = useState(0);
+
   return(
-    <div className='header'>
-      <h1>React Tutorial: {name}</h1>
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count+1)}>+</button>
     </div>
   )
 }
