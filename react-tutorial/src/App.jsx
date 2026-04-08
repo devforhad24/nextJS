@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "./Header";
+import Child from "./Child";
 
 
 function App(){
@@ -7,13 +7,12 @@ function App(){
 
   return(
     <div>
-      <h1>{count}</h1>
+      <h1>Welcome nextJS</h1>
+      <Child title="ReactJS" />
+      <Child title="nextJS" />
+      <h2>Count: {count}</h2>
       <button onClick={() => setCount(count+1)}>+</button>
-
-      <Header/>
-      <Header/>
-      <Header/>
-      <Header/>
+      <button onClick={() => setCount(count-1)}>-</button>
     </div>
   )
 }
