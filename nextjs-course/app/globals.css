@@ -1,11 +1,9 @@
 /* @import "tailwindcss"; */
-
 body{
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f8d5d5;
+    margin: 0;
+    background: #fbf6f6;
 }
 
 h1{
-  color: #19162c;
+    color: #00000d;
 }
