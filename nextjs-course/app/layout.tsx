@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export default function RootLayout({children} : {children : ReactNode}){
@@ -9,10 +10,10 @@ export default function RootLayout({children} : {children : ReactNode}){
       <body>
         <header style={{padding:12, background:"#a69e9e"}}>My Navbar
           <nav style={{display:"flex", gap:12}}>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/dashboard">Dashboard</a>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/dashboard">Dashboard</Link>
           </nav>
         </header>
         {children}
