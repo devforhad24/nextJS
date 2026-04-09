@@ -7,9 +7,16 @@ export default function RootLayout({children} : {children : ReactNode}){
         <title>Next.js Course - Forhad</title>
       </head>
       <body>
-        <header>My Navbar</header>
+        <header style={{padding:12, background:"#a69e9e"}}>My Navbar
+          <nav style={{display:"flex", gap:12}}>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/dashboard">Dashboard</a>
+          </nav>
+        </header>
         {children}
-        <footer>My Footer</footer>
+        <footer style={{padding:12, background:"#a69e9e"}}>My Footer</footer>
       </body>
     </html>
   )
