@@ -1,9 +1,5 @@
 /* @import "tailwindcss"; */
+
 body{
     margin: 0;
-    background: #fbf6f6;
-}
-
-h1{
-    color: #00000d;
 }
